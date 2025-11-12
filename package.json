@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "client": "nx run @stock-app/client:dev"
+    "client": "nx run @stock-app/client:dev",
+    "storybook": "nx run @stock-app/ui:storybook"
   },
   "private": true,
   "dependencies": {
@@ -25,10 +26,12 @@
     "@nx/eslint-plugin": "22.0.3",
     "@nx/js": "22.0.3",
     "@nx/react": "22.0.3",
+    "@nx/storybook": "^22.0.3",
     "@nx/vite": "22.0.3",
     "@nx/web": "22.0.3",
     "@nx/workspace": "22.0.3",
     "@react-router/dev": "^7.2.0",
+    "@storybook/react-vite": "9.1.16",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
@@ -54,7 +57,9 @@
     "jsdom": "~22.1.0",
     "nx": "22.0.3",
     "prettier": "^2.6.2",
+    "storybook": "9.1.16",
     "tailwindcss": "^4.1.17",
+    "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
