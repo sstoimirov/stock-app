@@ -7,7 +7,13 @@ export function AppNav() {
         Home
       </NavLink>
       <NavLink to="/about" end>
-        About something here
+        About
+      </NavLink>
+      <NavLink to="/profile" end>
+        Profile
+      </NavLink>
+      <NavLink to="/posts" end>
+        Posts
       </NavLink>
     </nav>
   );

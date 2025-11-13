@@ -2,7 +2,9 @@
   "name": "@stock-app/client",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "typecheck": "react-router typegen && tsc"
+  },
   "sideEffects": false,
   "dependencies": {
     "@react-router/node": "^7.2.0",
