@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
-import type { Route } from '@routes/+types/posts';
+import type { Route } from '../../.react-router/types/app/routes/+types/posts';
 import { fetcher } from '../utils/fetcher';
-import type { WithLoaderData } from '~/utils/route';
+import type { WithLoaderData } from '../utils/route';
 
 export type PostSummary = {
   id: number;
@@ -12,7 +12,7 @@ export async function clientLoader() {
   return fetcher('https://jsonplaceholder.typicode.com/posts');
 }
 
-export async function action() {}
+// export async function action() {}
 
 export default function Posts({
   loaderData,

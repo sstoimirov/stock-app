@@ -6,10 +6,10 @@
 // //   blue: [0, 0, 255],
 // // } satisfies Record<Colors, string | RGB>;
 
-import type { Route } from '@routes/+types/post';
+import type { Route } from '../../.react-router/types/app/routes/+types/post';
 import { Form, redirect } from 'react-router';
-import { fetcher } from '~/utils/fetcher';
-import type { WithLoaderData } from '~/utils/route';
+import { fetcher } from '../utils/fetcher';
+import type { WithLoaderData } from '../utils/route';
 export type PostData = {
   id: number;
   title: string;

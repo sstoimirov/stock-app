@@ -1,6 +1,4 @@
 {
-  "include": [".react-router/types/**/*"],
-
   "compilerOptions": {
     "composite": true,
     "declarationMap": true,
@@ -18,12 +16,6 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@stock-app/source"],
-    "baseUrl": "./apps/client",
-    "rootDirs": ["./apps/client", "./.react-router/types"],
-    "paths": {
-      "@routes/*": [".react-router/types/app/routes/*"],
-      "~/*": ["app/*"] // <-- only this is added locally
-    }
+    "customConditions": ["@stock-app/source"]
   }
 }
